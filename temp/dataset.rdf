@@ -1,0 +1,1043 @@
+@prefix rdfdf: <http://www.openlinksw.com/virtrdf-data-formats#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions/#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ogc:   <http://www.opengis.net/> .
+@prefix ogcgsf: <http://www.opengis.net/def/function/geosparql/> .
+@prefix protseq: <http://purl.org/science/protein/bysequence/> .
+@prefix xslwd: <http://www.w3.org/TR/WD-xsl> .
+@prefix sql:   <sql:> .
+@prefix sc:    <http://purl.org/science/owl/sciencecommons/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix ogcsf: <http://www.opengis.net/ont/sf#> .
+@prefix nci:   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix virtrdf: <http://www.openlinksw.com/schemas/virtrdf#> .
+@prefix rdfa:  <http://www.w3.org/ns/rdfa#> .
+@prefix ogcgsr: <http://www.opengis.net/def/rule/geosparql/> .
+@prefix ogcgml: <http://www.opengis.net/ont/gml#> .
+@prefix mf:    <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+@prefix virtcxml: <http://www.openlinksw.com/schemas/virtcxml#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix mesh:  <http://purl.org/commons/record/mesh/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:  <http://rdfs.org/sioc/ns#> .
+@prefix xsl10: <http://www.w3.org/XSL/Transform/1.0> .
+@prefix product: <http://www.buy.com/rss/module/productV2/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix go:    <http://purl.org/obo/owl/GO#> .
+@prefix dawgt: <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix xsl1999: <http://www.w3.org/1999/XSL/Transform> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix xf:    <http://www.w3.org/2004/07/xpath-functions> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard2006: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix ogcgs: <http://www.opengis.net/ont/geosparql#> .
+@prefix math:  <http://www.w3.org/2000/10/swap/math#> .
+@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix bif:   <bif:> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://openuai.ifpb.edu.br/ouai#subarea7>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10302018 ;
+        <http://purl.org/dc/terms/title>
+                "matemática simbólica" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea11>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10303022 ;
+        <http://purl.org/dc/terms/title>
+                "engenharia de software" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea17>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10304029 ;
+        <http://purl.org/dc/terms/title>
+                "arquitetura de sistemas de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea6>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10302000 ;
+        <http://purl.org/dc/terms/title>
+                "matemática da computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea10>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10303014 ;
+        <http://purl.org/dc/terms/title>
+                "linguagens de programação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea16>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10304010 ;
+        <http://purl.org/dc/terms/title>
+                "hardware" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea5>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10301046 ;
+        <http://purl.org/dc/terms/title>
+                "lógicas e semântica de programas" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea15>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10304002 ;
+        <http://purl.org/dc/terms/title>
+                "sistema de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea4>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10301038 ;
+        <http://purl.org/dc/terms/title>
+                "análise de algorítmos e complexidade de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea14>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10303057 ;
+        <http://purl.org/dc/terms/title>
+                "processamento gráfico (graphics)" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea3>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10301020 ;
+        <http://purl.org/dc/terms/title>
+                "linguagem formais e autômatos" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea9>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10303006 ;
+        <http://purl.org/dc/terms/title>
+                "metodologia e técnicas da computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea13>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10303049 ;
+        <http://purl.org/dc/terms/title>
+                "sistemas de informação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea19>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10304045 ;
+        <http://purl.org/dc/terms/title>
+                "teleinformática" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea2>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10301011 ;
+        <http://purl.org/dc/terms/title>
+                "computabilidade e modelos de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea8>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10302026 ;
+        <http://purl.org/dc/terms/title>
+                "modelos analíticos e de simulação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea12>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10303030 ;
+        <http://purl.org/dc/terms/title>
+                "banco de dados" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea18>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10304037 ;
+        <http://purl.org/dc/terms/title>
+                "software básico" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea1>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/identifier>
+                10301003 ;
+        <http://purl.org/dc/terms/title>
+                "teoria da computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea0>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/title>
+                "redes de computadores" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea21>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/title>
+                "sistemas de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea22>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#area0> ;
+        <http://purl.org/dc/terms/title>
+                "telecomunicações" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea23>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/title>
+                "" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea24>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/title>
+                "gerência de projetos" .
+
+<http://openuai.ifpb.edu.br/ouai#subarea25>
+        a                <http://openuai.ifpb.edu.br/ouai#Subarea> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#area1> ;
+        <http://purl.org/dc/terms/title>
+                "gestão de serviços em ti" .
+
+<http://openuai.ifpb.edu.br/ouai#grandearea1>
+        a       <http://openuai.ifpb.edu.br/ouai#GeneralArea> ;
+        <http://purl.org/dc/terms/identifier>
+                10000003 ;
+        <http://purl.org/dc/terms/title>
+                "ciencias exatas e da terra" .
+
+<http://openuai.ifpb.edu.br/ouai#generalarea0>
+        a       <http://openuai.ifpb.edu.br/ouai#GeneralArea> ;
+        <http://purl.org/dc/terms/title>
+                "engenharias" .
+
+<http://openuai.ifpb.edu.br/ouai#area1>
+        a                <http://openuai.ifpb.edu.br/ouai#Area> ;
+        rdfs:subclassOf  <http://openuai.ifpb.edu.br/ouai#grandearea1> ;
+        <http://purl.org/dc/terms/identifier>
+                10300007 ;
+        <http://purl.org/dc/terms/title>
+                "ciência da computação" .
+
+<http://openuai.ifpb.edu.br/ouai#area0>
+        a                <http://openuai.ifpb.edu.br/ouai#Area> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#generalarea0> ;
+        <http://purl.org/dc/terms/title>
+                "engenharia elétrica" .
+
+<http://openuai.ifpb.edu.br/ouai#subject5>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://purl.org/dc/terms/title>
+                "gerência de redes" .
+
+<http://openuai.ifpb.edu.br/ouai#subject3>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://purl.org/dc/terms/title>
+                "redes convergentes" .
+
+<http://openuai.ifpb.edu.br/ouai#subject1>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://purl.org/dc/terms/title>
+                "segurança da informação" .
+
+<http://openuai.ifpb.edu.br/ouai#subject4>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://purl.org/dc/terms/title>
+                "projeto de redes" .
+
+<http://openuai.ifpb.edu.br/ouai#subject2>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://purl.org/dc/terms/title>
+                "redes sem fio" .
+
+<http://openuai.ifpb.edu.br/ouai#subject0>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://purl.org/dc/terms/title>
+                "redes de computadores" .
+
+<http://openuai.ifpb.edu.br/ouai#subject7>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea22> ;
+        <http://purl.org/dc/terms/title>
+                "sistemas de telecomunicações" .
+
+<http://openuai.ifpb.edu.br/ouai#subject6>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://purl.org/dc/terms/title>
+                "teleinformática" .
+
+<http://openuai.ifpb.edu.br/ouai#subject8>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://purl.org/dc/terms/title>
+                "" .
+
+<http://openuai.ifpb.edu.br/ouai#subject11>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "banco de dados" .
+
+<http://openuai.ifpb.edu.br/ouai#subject10>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "sistemas de informação" .
+
+<http://openuai.ifpb.edu.br/ouai#subject9>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "engenharia de software" .
+
+<http://openuai.ifpb.edu.br/ouai#subject12>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "linguagens de programação" .
+
+<http://openuai.ifpb.edu.br/ouai#subject15>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://purl.org/dc/terms/title>
+                "interação humano computador" .
+
+<http://openuai.ifpb.edu.br/ouai#subject14>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "sistemas colaborativos" .
+
+<http://openuai.ifpb.edu.br/ouai#subject13>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "gerência de projetos" .
+
+<http://openuai.ifpb.edu.br/ouai#subject16>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://purl.org/dc/terms/title>
+                "arquitetura de sistemas de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subject17>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea1> ;
+        <http://purl.org/dc/terms/title>
+                "análise de algoritmos e complexidade de computação" .
+
+<http://openuai.ifpb.edu.br/ouai#subject18>
+        a                <http://openuai.ifpb.edu.br/ouai#Subject> ;
+        rdfs:subClassOf  <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://purl.org/dc/terms/title>
+                "business intelligence" .
+
+<http://openuai.ifpb.edu.br/ouai#professor0>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "QUARESMA FILHO, J. G." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea0> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/4746494092254541"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4434335Z4" ;
+        foaf:name  "José Gomes Quaresma Filho" .
+
+<http://openuai.ifpb.edu.br/ouai#professor1>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "BATISTA, C. S. V." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea21> , <http://openuai.ifpb.edu.br/ouai#subarea22> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject1> , <http://openuai.ifpb.edu.br/ouai#researchproject0> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/2544354970376003"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4702574D0" ;
+        foaf:name  "Caio Sérgio de Vasconcelos Batista" .
+
+<http://openuai.ifpb.edu.br/ouai#professor2>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "CARDOSO, D. F. V." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/4472098497391191"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4658160Z9" ;
+        foaf:name  "Daniel Fernandes Vilar Cardoso" .
+
+<http://openuai.ifpb.edu.br/ouai#professor3>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "MEDEIROS, J. D. R. V." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea11> , <http://openuai.ifpb.edu.br/ouai#subarea23> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject8> , <http://openuai.ifpb.edu.br/ouai#researchproject3> , <http://openuai.ifpb.edu.br/ouai#researchproject2> , <http://openuai.ifpb.edu.br/ouai#researchproject4> , <http://openuai.ifpb.edu.br/ouai#researchproject9> , <http://openuai.ifpb.edu.br/ouai#researchproject5> , <http://openuai.ifpb.edu.br/ouai#researchproject6> , <http://openuai.ifpb.edu.br/ouai#researchproject10> , <http://openuai.ifpb.edu.br/ouai#researchproject7> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/9730254173461923"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4761834Y6" ;
+        foaf:name  "Juliana Dantas Ribeiro Viana de Medeiros" .
+
+<http://openuai.ifpb.edu.br/ouai#professor4>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "RODRIGUES, N. N." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea9> , <http://openuai.ifpb.edu.br/ouai#subarea24> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject15> , <http://openuai.ifpb.edu.br/ouai#researchproject14> , <http://openuai.ifpb.edu.br/ouai#researchproject13> , <http://openuai.ifpb.edu.br/ouai#researchproject18> , <http://openuai.ifpb.edu.br/ouai#researchproject11> , <http://openuai.ifpb.edu.br/ouai#researchproject17> , <http://openuai.ifpb.edu.br/ouai#researchproject16> , <http://openuai.ifpb.edu.br/ouai#researchproject12> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/4034747917315609"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4268137D6" ;
+        foaf:name  "Nadja da Nobrega Rodrigues" .
+
+<http://openuai.ifpb.edu.br/ouai#professor5>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "LIRA, H. B.;LIRA, HEREMITA BRASILEIRO" ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea9> , <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject23> , <http://openuai.ifpb.edu.br/ouai#researchproject22> , <http://openuai.ifpb.edu.br/ouai#researchproject21> , <http://openuai.ifpb.edu.br/ouai#researchproject19> , <http://openuai.ifpb.edu.br/ouai#researchproject20> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/3532701873325164"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4700519D1" ;
+        foaf:name  "Heremita Brasileiro Lira" .
+
+<http://openuai.ifpb.edu.br/ouai#professor6>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "OLIVEIRA, L.;Luciana Oliveira;Oliveira, Luciana;Luciana Pereira Oliveira;Oliveira, Luciana Pereira;OLIVEIRA, LUCIANA P." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea9> , <http://openuai.ifpb.edu.br/ouai#subarea21> , <http://openuai.ifpb.edu.br/ouai#subarea23> , <http://openuai.ifpb.edu.br/ouai#subarea25> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject29> , <http://openuai.ifpb.edu.br/ouai#researchproject28> , <http://openuai.ifpb.edu.br/ouai#researchproject24> , <http://openuai.ifpb.edu.br/ouai#researchproject27> , <http://openuai.ifpb.edu.br/ouai#researchproject26> , <http://openuai.ifpb.edu.br/ouai#researchproject25> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/4044015211881197"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4757415Z6" ;
+        foaf:name  "Luciana Pereira Oliveira" .
+
+<http://openuai.ifpb.edu.br/ouai#professor7>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "FREIRE, C. A.;FREIRE, C.;FREIRE, CRISHANE" ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject30> , <http://openuai.ifpb.edu.br/ouai#researchproject31> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/0792579968024518"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4728140T6" ;
+        foaf:name  "Crishane Azevedo Freire" .
+
+<http://openuai.ifpb.edu.br/ouai#professor8>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "SILVA, Thiago Gouveia da" ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea1> , <http://openuai.ifpb.edu.br/ouai#subarea21> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/2049877991330408"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4718947T1" ;
+        foaf:name  "Thiago Gouveia da Silva" .
+
+<http://openuai.ifpb.edu.br/ouai#professor9>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "COSTA, P. R. S." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/7257600761427884"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4774545D7" ;
+        foaf:name  "Paulo Roberto Santos Costa" .
+
+<http://openuai.ifpb.edu.br/ouai#professor10>
+        a          <http://dbpedia.org/ontology/Professor> ;
+        <http://openuai.ifpb.edu.br/ouai#citationName>
+                "CAVALCANTI, V. M. B." ;
+        <http://openuai.ifpb.edu.br/ouai#hasSubarea>
+                <http://openuai.ifpb.edu.br/ouai#subarea9> ;
+        <http://openuai.ifpb.edu.br/ouai#isCoordinatorIn>
+                <http://openuai.ifpb.edu.br/ouai#researchproject34> , <http://openuai.ifpb.edu.br/ouai#researchproject33> , <http://openuai.ifpb.edu.br/ouai#researchproject32> ;
+        <http://openuai.ifpb.edu.br/ouai#lattesURL>
+                "http://lattes.cnpq.br/2868420260808800"^^xsd:anyURI ;
+        <http://purl.org/dc/terms/identifier>
+                "K4770822J4" ;
+        foaf:name  "Valéria Maria Bezerra Cavalcanti" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject1>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2014"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2012"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "DESENVOLVIMENTO E MONITORAMENTO DE UMA APLICAÇÃO DE HEALTH CARE." .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject0>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2013"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2011"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "UM MECANISMO PARA MONITORAMENTO DE QOS E QOC EM MIDDLEWARE PARA COMPUTAÇÃO UBÍQUA" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject8>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Integração de práticas ágeis: uma abordagem para melhorar a qualidade de especificações de software" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject3>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "1996"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "1995"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "ANUNCIADOR AUTOMÁTICO DE CONSULTAS A PARTIR DE UMA AGENDA MÉDICA ELETRÔNICA" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject2>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "1998"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "1996"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "BONCASE: Suporte Distribuído à Análise e Projeto de Software Orientado a Objetos" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject4>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2006"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2005"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "GCOMP - Gerenciador de Componentes" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject9>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2013"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2012"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "SIM - SISTEMA DE INFORMAÇÃO MUNICIPAL" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject5>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2007"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2005"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "COMPGOV - BIBLIOTECA COMPARTILHADA DE COMPONENTES PARA E-GOV" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject6>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "FreeGPS (Utilização de tecnologias de software livre para GPS visando a navegação em mapas)" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject10>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2012"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2012"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Automação BPM (Business Process Management)" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject7>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Sistema de Informação Integrado para Controle de Dopagem" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject15>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2012"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2011"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "AdEPT: Framework para Melhoria de Processos de Software - Adoção, Evolução, Prospecção e Treinamento" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject14>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2011"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2010"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Tecnologias de Informação e Comunicação Aplicadas à Terceira Idade de Cajazeiras: A Descoberta do Mundo Virtual" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject13>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2011"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2010"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Paraíba sem Fronteiras: Mapeamento da Influência das Tecnologias de Informação e Comunicação na Globalização em Cajazeiras" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject18>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Políticas Públicas de Inclusão Digital no Brasil enquanto instrumentos de promoção da cidadania e da inclusão social: uma análise em João Pessoa" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject11>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2011"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2010"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "SimpleWay Process: Um Processo de Desenvolvimento de Software" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject17>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2014"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "A Necessidade de Behavior-Driven Development em Projetos com Ferramentas Rapid Application Development" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject16>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2012"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2011"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Ecossistemas Corporativos: Parcerias Baseadas em Redes de Relacionamentos" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject12>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2011"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2010"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Empresa Júnior no Campus Cajazeiras do IFPB: Viabilizando o Desenvolvimento e a Implantação de Soluções de Tecnologia de Informação no Sertão Paraibano" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject23>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2015"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Práticas em Processos de Desenvolvimento de Software" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject22>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Grupo de Pesquisa em Inteligência Computacional" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject21>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Práticas em Gerenciamento de Projetos" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject19>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2009"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2007"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "SIEP Gerencial - RENAPI - SETEC/MEC" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject20>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2014"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Boas Práticas em Engenharia de Software" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject29>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2016"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Sistema Computacional para reduzir o custo e tempo do adestramento de cães para deficiente visuais" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject28>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2016"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Solução semântica para ampliar os benefícios do OpenRemote em um cenário de automação residencial sustentável" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject24>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2004"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2003"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "QoSWare: Gerenciamento de QoS no Middleware para Aplicações em Tempo Real" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject27>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2016"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Estudo e desenvolvimento de redes inteligentes para aprimorar um cenário de automação residencial sustentável" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject26>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2017"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2015"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Desenvolvimento de Tecnologia Assistiva a Partir do Lixo" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject25>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2015"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Desenvolvimento de sistema computacional para auxiliar ONGs na formação de cães-guia" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject30>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "0"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2016"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Geração de Metadados Descritivos de Conjuntos de Dados na Web sobre Pesquisadores" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject31>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2016"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2015"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Identificação de Padrões e Vocabulários para Registro e Publicação de Fontes Web" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject34>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2008"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2005"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Geotur - Ferramenta de GeoProcessamento" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject33>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2009"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2008"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Disponibilização de Informação Geográfica via Web" .
+
+<http://openuai.ifpb.edu.br/ouai#researchproject32>
+        a       <http://dbpedia.org/ontology/ResearchProject> ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfCompletion>
+                "2009"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#yearOfStart>
+                "2008"^^xsd:int ;
+        <http://purl.org/dc/terms/title>
+                "Projeto M.O.V.E.R. - Movimentação Orientada Via Estação Remota" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography59>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "SILBERS" ;
+        <http://purl.org/dc/terms/identifier>
+                "59" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography151>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "LEME, Trajano. Business Intelligence no Microsoft Excel. Rio e Janeiro : Axcel Books, 2004." ;
+        <http://purl.org/dc/terms/identifier>
+                "151" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography29>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "ELMASRI, Ramez A C Navathe, Shamkant B. – Sistemas de Banco de Dados – Pearson/Addison Wesley Pub Co Inc – 4a Edição, 2005. " ;
+        <http://purl.org/dc/terms/identifier>
+                "29" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography90>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "RODRIGUES, A.; ASSMAR, E. M. L.; JABLONSKI, " ;
+        <http://purl.org/dc/terms/identifier>
+                "90" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography121>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "FINKELSTEIN, Maria Eugenia Reis. Aspectos Jurídicos Do Comércio Eletrônico.São Paulo: IOB, 2004." ;
+        <http://purl.org/dc/terms/identifier>
+                "121" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography5>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "GUIMARÃES, Ângelo de Moura. Algoritmos e estruturas de dados. LTC, 1985." ;
+        <http://purl.org/dc/terms/identifier>
+                "5" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography60>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "ELMASRI, Ramez A C Navathe, Shamkant B. – Sistemas de Banco de Dados – Pearson/Addison Wesley Pub Co Inc (LT) – 4a Edição, 2005. " ;
+        <http://purl.org/dc/terms/identifier>
+                "60" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography30>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "HEUSER, Carlos Alberto. Projeto de Banco de Dados. Editora Sagra-Luzzatto" ;
+        <http://purl.org/dc/terms/identifier>
+                "30" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography133>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "Moacir Quadros. “Gerência de Projetos de Software”. Visual Books, 2002." ;
+        <http://purl.org/dc/terms/identifier>
+                "133" .
+
+<http://openuai.ifpb.edu.br/ouai#bibliography72>
+        a       <http://openuai.ifpb.edu.br/ouai#Bibliography> ;
+        <http://purl.org/dc/terms/description>
+                "" ;
+        <http://purl.org/dc/terms/identifier>
+                "72" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass268>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20171"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject3> ;
+        <http://purl.org/dc/terms/identifier>
+                "268" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass12>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20141"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject31> ;
+        <http://purl.org/dc/terms/identifier>
+                "12" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass142>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20151"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject7> ;
+        <http://openuai.ifpb.edu.br/ouai#taughtBy>
+                <http://openuai.ifpb.edu.br/ouai#professor7> ;
+        <http://purl.org/dc/terms/identifier>
+                "142" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass238>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20141"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject1> ;
+        <http://purl.org/dc/terms/identifier>
+                "238" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass112>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20152"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject2> ;
+        <http://purl.org/dc/terms/identifier>
+                "112" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass84>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20141"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject3> ;
+        <http://openuai.ifpb.edu.br/ouai#taughtBy>
+                <http://openuai.ifpb.edu.br/ouai#professor1> ;
+        <http://purl.org/dc/terms/identifier>
+                "84" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass208>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20162"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject23> ;
+        <http://purl.org/dc/terms/identifier>
+                "208" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass54>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20161"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject7> ;
+        <http://purl.org/dc/terms/identifier>
+                "54" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass184>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20142"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject14> ;
+        <http://purl.org/dc/terms/identifier>
+                "184" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass24>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20131"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject25> ;
+        <http://openuai.ifpb.edu.br/ouai#taughtBy>
+                <http://openuai.ifpb.edu.br/ouai#professor4> ;
+        <http://purl.org/dc/terms/identifier>
+                "24" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass154>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20132"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject17> ;
+        <http://purl.org/dc/terms/identifier>
+                "154" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass124>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20131"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject7> ;
+        <http://purl.org/dc/terms/identifier>
+                "124" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass96>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20141"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject24> ;
+        <http://purl.org/dc/terms/identifier>
+                "96" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass281>
+        a       <http://openuai.ifpb.edu.br/ouai#CourseClass> ;
+        <http://openuai.ifpb.edu.br/ouai#classReference>
+                "20171"^^xsd:int ;
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject17> ;
+        <http://purl.org/dc/terms/identifier>
+                "281" .
+
+<http://openuai.ifpb.edu.br/ouai#courseClass66>
+        <http://openuai.ifpb.edu.br/ouai#hasCourseSubject>
+                <http://openuai.ifpb.edu.br/ouai#coursesubject27> ;
+        <http://openuai.ifpb.edu.br/ouai#taughtBy>
+                <http://openuai.ifpb.edu.br/ouai#professor5> .
