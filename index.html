@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>dataUAI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Material+Icons">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+      <a class="link" href="/"><h1>dataUAI</h1></a>
+  </header>
+
+  <div class="main-content">
+    <h2 class="sector-title">Bem vindo ao #dataUAI</h2>
+    <p class="sector-title">O portal de dados abertos do IFPB/UAI</p>
+
+    <div class="options">
+      <a href="#" class="card">
+        <span class="icon">
+          <i class="material-icons">file_download</i>
+        </span>
+        <h1>Download</h1>
+      </a>
+      <a href="http://openuai.ifpb.edu.br/sparql/" class="card">
+        <span class="icon">
+          <i class="material-icons">cloud</i>
+        </span>
+        <h1>Endpoint</h1>
+      </a>
+    </div> <!-- options -->
+
+    <div>
+      <h3 class="sector-title">Informações Adicionais</h3>
+      <table>
+        <tr>
+          <th>Campo</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Ultima atualização</td>
+          <td>25/07/2017</td>
+        </tr>
+        <tr>
+          <td>Formato licença</td>
+          <td>RDF/turtle</td>
+        </tr>
+        <tr>
+          <td>Total de triplas</td>
+          <td id="total-triples"></td>
+        </tr>
+      </table>
+    </div>
+
+  </div> <!-- main-content -->
+
+  <div class="base-footer">
+
+  </div>
+
+</body>
+</html>
+
+<script>
+  let query = 'http://openuai.ifpb.edu.br/sparql/?default-graph-uri=&query=SELECT+%28COUNT%28*%29+as+%3Ftotal%29+FROM+%3Chttp%3A%2F%2Fopenuai.ifpb.edu.br%2Fopenuai%3E+WHERE+%7B+%3Fs+%3Fp+%3Fo+.+%7D&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
+
+  var bora = document.getElementById('total-triples');
+
+  fetch(query)
+    .then(res => res.json())
+    .then((data) => {
+      var total = data.results.bindings[0].total.value;
+
+      bora.innerHTML = total;
+    })
+</script>
