@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -22,12 +22,14 @@
           <i class="material-icons">file_download</i>
         </span>
         <h1>Download</h1>
+        <p>Conjunto de dados com professores, projetos, áreas e disciplinas.</p>
       </a>
       <a href="http://openuai.ifpb.edu.br/sparql/" class="card">
         <span class="icon">
           <i class="material-icons">cloud</i>
         </span>
         <h1>Endpoint</h1>
+        <p>Interface para consultas no dataset com Sparql.</p>
       </a>
     </div> <!-- options -->
 
@@ -52,7 +54,7 @@
         </tr>
         <tr>
           <td>Total de triplas</td>
-          <td id="total-triples"></td>
+          <td>3325</td>
         </tr>
       </table>
     </div>
@@ -66,7 +68,9 @@
 </body>
 </html>
 
-<script>
+<!-- Script para consultar quantidade de triplas do dataset -->
+
+<!-- <script>
   let query = 'http://openuai.ifpb.edu.br/sparql/?default-graph-uri=&query=SELECT+%28COUNT%28*%29+as+%3Ftotal%29+FROM+%3Chttp%3A%2F%2Fopenuai.ifpb.edu.br%2Fopenuai%3E+WHERE+%7B+%3Fs+%3Fp+%3Fo+.+%7D&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
 
   var bora = document.getElementById('total-triples');
@@ -78,4 +82,4 @@
 
       bora.innerHTML = total;
     })
-</script>
+</script> -->
